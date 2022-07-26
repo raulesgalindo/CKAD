@@ -1,0 +1,20 @@
+--Kubernetes Architecture
+Node(Minios)
+Cluster= Set of nodes
+
+Componentes:
+    API Server: Way of communication between CLI, clients to K8s Cluster
+    etcd: Keystore, stores all data to manage the cluster,
+    schedulre: distribe work on nodes, it looks for newly created containers and assign them to nodes.
+    controller: brain behind orchestration, responsible for noticing when nodes, containers or endpoints goes down, they make decisiones to bring up new containers if needed.
+    container runtime: docker engine
+    kubelet: agent that runs in each node
+
+Master vs Worker Nodes
+Worked Node: container runtime(docker, rkgt, cri-o), kubelet
+Master: kube api server, etcd, controller, scheduler
+
+kubectl: Kubecontrol
+kubectl run hello-minikube
+kubctl cluster-info
+kubctl get nodes
