@@ -1,0 +1,19 @@
+Containers are encapsulated by pods
+pods: single instance of an application, smallest object that we can create in K8s
+We don't additional contaimage.png
+
+Multi-Container
+A pod can have multiple containers
+helper containers
+-------------------
+    Just containers Management
+    if doing manually by not adding points we would be in charge of doing the connection
+
+    docker run python-app
+    docker run helper -link app1
+
+    We would need to manage the network the storage manually, for pods K8s take care of it.
+-------------------
+
+kubectl run nginx --image nginx
+kubectl get pods
