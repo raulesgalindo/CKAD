@@ -18,3 +18,7 @@ kubectl: Kubecontrol
 kubectl run hello-minikube
 kubctl cluster-info
 kubctl get nodes
+
+kubectl delete deployment nginx
+kubectl delete pod nginx
+kubectl create -f pod-definition.yml
